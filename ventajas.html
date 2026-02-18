@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es" class="dark">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>¿Por qué elegirnos? | Ventajas TechSolutions</title>
+    <meta name="description" content="Descubre por qué TechSolutions es el aliado ideal: respuesta inmediata, seguridad garantizada y optimización real de recursos.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="js/transitions.js" defer></script>
+    <script src="js/config.js" defer></script>
+
+    <style>
+        .advantages-wrapper {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 4rem;
+            align-items: center;
+            max-width: var(--container);
+            margin: 0 auto;
+        }
+
+        .advantage-item {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            border-radius: 24px;
+            transition: var(--transition);
+        }
+
+        .advantage-item:hover {
+            background: rgba(255, 255, 255, 0.03);
+            transform: translateX(10px);
+        }
+
+        .advantage-icon {
+            background: var(--primary);
+            color: white;
+            padding: 12px;
+            border-radius: 12px;
+            height: fit-content;
+            box-shadow: 0 0 20px var(--primary-glow);
+        }
+
+        .image-container {
+            position: relative;
+            z-index: 1;
+        }
+
+        .image-container::after {
+            content: "";
+            position: absolute;
+            inset: -20px;
+            background: var(--primary-glow);
+            filter: blur(80px);
+            z-index: -1;
+            border-radius: 50%;
+        }
+
+        .image-glass {
+            padding: 10px;
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 32px;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+
+        .image-glass img {
+            width: 100%;
+            border-radius: 22px;
+            display: block;
+            filter: saturate(1.2) contrast(1.1);
+        }
+
+        @media (max-width: 1024px) {
+            .advantages-wrapper {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .image-container {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body class="bg-main text-content">
+
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <header class="header" id="main-header" role="banner">
+        <nav class="nav-container" aria-label="Menú principal">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><span class="material-symbols-outlined">terminal</span></div>
+                <span class="logo-text">Soluciones<span>Digitales</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="servicios.html" class="link-item">Servicios</a></li>
+                <li><a href="#ventajas" class="link-item">Ventajas</a></li>
+                <li><a href="contacto.html" class="btn-primary-sm">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <section class="advantages-wrapper">
+            <div class="text-content-area" style="text-align: left;">
+                <div class="badge" style="margin-bottom: 1.5rem;">
+                    <span class="pulse"></span> Ventaja Competitiva
+                </div>
+                <h1 class="hero-title" style="text-align: left; font-size: clamp(2rem, 5vw, 3.5rem);">
+                    Valor real en cada <br><span class="gradient-text">CLICK.</span>
+                </h1>
+                
+                <div class="advantage-list" style="margin-top: 3rem;">
+                    <article class="advantage-item">
+                        <div class="advantage-icon">
+                            <span class="material-symbols-outlined">bolt</span>
+                        </div>
+                        <div>
+                            <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Respuesta Inmediata</h2>
+                            <p style="color: var(--text-dim);">No dejamos tickets abiertos por días. Nuestra prioridad es que tu flujo de trabajo no se detenga, respondiendo en tiempo récord.</p>
+                        </div>
+                    </article>
+
+                    <article class="advantage-item">
+                        <div class="advantage-icon">
+                            <span class="material-symbols-outlined">security</span>
+                        </div>
+                        <div>
+                            <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Seguridad Garantizada</h2>
+                            <p style="color: var(--text-dim);">Aplicamos protocolos de seguridad en cada instalación y desarrollo web para proteger tu activo más valioso: la información.</p>
+                        </div>
+                    </article>
+
+                    <article class="advantage-item">
+                        <div class="advantage-icon">
+                            <span class="material-symbols-outlined">verified_user</span>
+                        </div>
+                        <div>
+                            <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Soporte Humano</h2>
+                            <p style="color: var(--text-dim);">Sin bots que confunden. Trato directo con expertos que entienden tus necesidades y hablan tu mismo idioma.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="image-container">
+                <div class="image-glass">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80" alt="Tecnología avanzada y ciberseguridad">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-elegant" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-column">
+                <p class="footer-logo">Soluciones Digitales</p>
+                <p>Potenciamos marcas locales con tecnología de vanguardia. Tu negocio merece una presencia digital profesional.</p>
+            </div>
+            <div class="footer-column">
+                <nav aria-label="Redes sociales">
+                    <h4>Síguenos</h4>
+                    <ul class="social-links">
+                        <li><a href="https://www.instagram.com/jar_florida" target="_blank" rel="noopener"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.facebook.com/jar.florida" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="https://wa.me/59898643182" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 SolucionesDigitales. Todos los derechos reservados.</p>
+            <p class="credits">Desarrollado por <a href="https://wa.me/59898643182" rel="author" target="_blank">JR Ayuda Digital</a></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script>
+        // Lógica de Cursor Glow
+        const glow = document.getElementById('cursor-glow');
+        window.addEventListener('mousemove', (e) => {
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+        });
+    </script>
+</body>
+</html>
