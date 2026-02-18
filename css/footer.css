@@ -1,0 +1,104 @@
+/* ==========================================
+   FOOTER — Tu Ayuda Digital (estilo dark tech elegante)
+   Archivo: footer-tu-ayuda-digital.css
+   ========================================== */
+
+.footer-elegant {
+  background: linear-gradient(180deg, #0b0f14 0%, #0a0d12 100%);
+  border-top: 1px solid rgba(0, 200, 255, 0.15);
+  color: #cfd8e3;
+  padding: 60px 20px 30px;
+  font-family: inherit;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+}
+
+.footer-column h3,
+.footer-column h4 {
+  color: #ffffff;
+  margin-bottom: 14px;
+  letter-spacing: 0.3px;
+}
+
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #00c8ff, #00ffa3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-column p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #a9b4c2;
+  margin-bottom: 8px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #cfd8e3;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.social-links a:hover {
+  color: #00ffa3;
+  background: rgba(0, 255, 163, 0.08);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(0, 200, 255, 0.12);
+  margin-top: 40px;
+  padding-top: 18px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #8b97a8;
+}
+
+.footer-bottom p {
+  margin: 4px 0;
+}
+
+.footer-bottom a {
+  color: #00c8ff;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-bottom a:hover {
+  color: #00ffa3;
+}
+
+/* Responsive ajuste */
+@media (max-width: 640px) {
+  .footer-elegant {
+    padding: 50px 16px 26px;
+  }
+
+  .footer-container {
+    gap: 28px;
+  }
+}

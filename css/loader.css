@@ -1,0 +1,41 @@
+/* Pantalla de carga a pantalla completa */
+#page-loader {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #101922; /* Tu color background-dark */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-out, visibility 0.5s;
+}
+
+/* Icono de terminal con efecto de brillo (glow) */
+.loader-icon {
+    font-size: 3rem;
+    color: #2b8cee; /* Tu color primary */
+    animation: tech-pulse 1.5s infinite ease-in-out;
+}
+
+/* Texto de "Cargando" con fuente Mono */
+.loader-text {
+    margin-top: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: #2b8cee;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+/* Animación de pulso electromagnético */
+@keyframes tech-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); filter: drop-shadow(0 0 5px #2b8cee); }
+    50% { opacity: 0.5; transform: scale(0.95); filter: drop-shadow(0 0 20px #2b8cee); }
+}
+
+/* Clase para ocultar el loader */
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
