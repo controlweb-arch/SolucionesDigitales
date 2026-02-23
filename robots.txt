@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Indica la ruta completa de tu sitemap
-Sitemap: https://github.com/controlweb-arch/SolucionesDigitales/sitemap.xml
+Sitemap: https://solucionesdigitales-uy.vercel.app/sitemap.xml
