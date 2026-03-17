@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm');
     const submitBtn = form.querySelector('button[type="submit"]');
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz7dPthNkI8JcO78Ilu_VznpOy27WTH1apak9eqiLeuxuPf62MvLzBL270qJs_yu0agaA/exec'; // Reemplaza esto
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx_u0ybPDbtsRvHu4FgnaX3gC6U6aeWmNn536mpuja0nBByMydGVyjzcCTuhF2HJMk_3w/exec'; // Reemplaza esto
 
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
